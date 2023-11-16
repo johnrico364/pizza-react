@@ -1,0 +1,80 @@
+body{
+    background-image: url(/src/components/Images/BackgroundImg.png);
+    margin: 0;
+    margin: auto;
+    background-position: left;
+    background-size:   950px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    height: 37.5vh;
+    margin-top: 110px;
+    margin-left: 1200px;
+    margin-bottom: 130px;   
+    max-width: 450px;
+    padding: 20px;
+    background-color: 0;
+    border-radius: 8px;
+
+}
+
+h2{
+    color: #FF6600;
+    margin-bottom: 35px;
+    font-style: italic;
+}
+
+button {
+    padding: 19px;
+    background-color: #FF6600;
+    font-size: medium;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d15604;
+}
+ 
+form {
+    
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    padding: 17px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline-color: #FF6600;
+}
+
+
+.rememberme{
+    margin-left: -3px;
+    margin-top: -5px;
+    color: #797979;   
+}
+
+.check-box:checked{
+    accent-color: #FF6600;
+}
