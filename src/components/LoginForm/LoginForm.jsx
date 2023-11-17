@@ -1,71 +1,63 @@
-import React, { useState } from 'react';
-import './LoginForm.css';
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./Login.css";
 
-
-
-const LoginForm = () => {
-  
-
-  const [mobilenumber, setMobilenumber] = useState({mobilenumber: ""});
-  const [password, setPassword] = useState('');
-  
-
-  
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    
-    console.log('mobilenumber:', mobilenumber);
-    console.log('Password:', password);
-    
-    setMobilenumber('');
-    setPassword('');
-  };
-
- 
+export const LoginForm = () => {
+  const navigate = useNavigate();
 
   return (
-    <body>
-      
-    
-    <div className="container">
-      <div>
-        <h2>Login your account</h2>
-        <form onSubmit={handleFormSubmit}>
-
-        <label htmlFor="mobilenumber">Mobile Number:</label>
-        <input
-          type="mobilenumber"
-          id="mobile-number"
-          value={mobilenumber}
-          onChange={(e) => setMobilenumber(e.target.value)}
-          required
-        />
-
-
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-
-        <p className="rememberme">
-            <input type="checkbox" className="check-box" />
-            <span className="span-text">
-                Remember me
-            </span>
-        </p>
-        <button type="submit">Log in</button>
-          
-
-      </form>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="login-pic-side col-6 "></div>
+        <div className="login-form-side col-6">
+          <div className="login-container row g-3 justify-content-center align-content-center">
+            <div className="col-9">
+              <h1>Sign up</h1>
+              <div className="row mt-4">
+                <div className="col">
+                  <input
+                    className="login-input w-100"
+                    type="text"
+                    placeholder="Email:"
+                  />
+                </div>
+              </div>
+              <div className="row mt-4">
+                <div className="col">
+                  <input
+                    className="login-input w-100"
+                    type="text"
+                    placeholder="Password:"
+                  />
+                </div>
+              </div>
+              <div className="row mt-4">
+                <div className="col">
+                  <button onClick={() => navigate("/home ")} className="login-btn w-100">Sign up</button>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <div className="mt-2 text-end">
+                    <Link className="Link-create nav-link" to={"/signup"}>
+                      Create Account?
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="row mt-5">
+                <div className="col-5 ">
+                  <hr className="hr" />
+                </div>
+                <div className="col-2 p-0">Sign Up with</div>
+                <div className="col-4">
+                  <hr className="hr" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    </body>
   );
 };
-
-
-export default LoginForm;

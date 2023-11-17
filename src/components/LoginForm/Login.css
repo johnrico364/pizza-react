@@ -1,0 +1,38 @@
+.login-pic-side {
+  background-image: url("../Images/BackgroundImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  height: 100vh;
+  color: orange;
+}
+.login-input {
+  background-color: #eaeaea;
+  height: 60px;
+  border: 2px orange solid;
+  border-radius: 8px;
+}
+.login-input::placeholder {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.login-input:focus {
+  outline: 0;
+}
+.login-btn {
+  background-color: orange;
+  border: 0;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 18px;
+  color: #eaeaea;
+  font-weight: bold;
+}
+.hr {
+  border: 3px rgb(255, 145, 0) solid;
+}
+.Link-create {
+  color: orange;
+}
