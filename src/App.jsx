@@ -1,8 +1,8 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { LoginForm } from "./components/loginForm/LoginForm";
-import { SignupForm } from "./components/signupForm/SignupForm";
+import { LoginForm } from "./components/login/LoginForm";
+import { SignupForm } from "./components/signup/SignupForm";
 import { Navbar } from "./components/home/Navbar";
 import { Home } from "./components/home/Home";
 
