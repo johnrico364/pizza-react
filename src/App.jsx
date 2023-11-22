@@ -5,6 +5,9 @@ import { LoginForm } from "./components/login/LoginForm";
 import { SignupForm } from "./components/signup/SignupForm";
 import { Navbar } from "./components/home/Navbar";
 import { Home } from "./components/home/Home";
+import { Menu } from "./components/home/Menu";
+import { Location } from "./components/home/Location";
+import { About } from "./components/home/About";
 
 function App() {
   return (
@@ -15,9 +18,9 @@ function App() {
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/home" element={<Navbar />}>
             <Route path="home" element={<Home/>}/>
-            <Route />
-            <Route />
-            <Route />
+            <Route path="menu" element={<Menu/>}/>
+            <Route path="location" element={<Location/>}/>
+            <Route path="about" element={<About/>}/>
           </Route>
           <Route path="*" />
         </Routes>

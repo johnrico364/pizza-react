@@ -1,12 +1,9 @@
-import "./css/Home.css"
-
-export const Home = () =>{
+export const Menu = () =>{
     return <div className="container-fluid">
         <div className="row">
             <div className="col">
-                <div className="display-1">This is home</div>
+                <div className="display-1">Menu Side</div>
             </div>
-            
         </div>
     </div>
 }
