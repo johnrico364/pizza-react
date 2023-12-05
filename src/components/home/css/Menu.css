@@ -1,0 +1,8 @@
+img{
+    padding-top: 25px;
+}
+
+.pizza-btn, .dessert-btn, .meal-btn{
+    margin-top: 10px;
+    gap: 5px;
+} 

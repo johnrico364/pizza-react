@@ -45,15 +45,6 @@ export const LoginForm = () => {
                   </div>
                 </div>
               </div>
-              <div className="row mt-5">
-                <div className="col-5 ">
-                  <hr className="hr" />
-                </div>
-                <div className="col-2 p-0">Sign Up with</div>
-                <div className="col-4">
-                  <hr className="hr" />
-                </div>
-              </div>
             </div>
           </div>
         </div>

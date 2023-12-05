@@ -6,33 +6,43 @@
 
 .login-container {
   height: 100vh;
-  color: orange;
+  color: #FE6502;
 }
 .login-input {
-  background-color: #eaeaea;
   height: 60px;
-  border: 2px orange solid;
+  border: 2px #acabab solid;
   border-radius: 8px;
 }
 .login-input::placeholder {
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  padding: 5px;
 }
 .login-input:focus {
   outline: 0;
 }
 .login-btn {
-  background-color: orange;
+  background-color: #FE6502;
   border: 0;
   border-radius: 10px;
   height: 60px;
   font-size: 18px;
-  color: #eaeaea;
+  color: #ffff;
   font-weight: bold;
 }
+
+.login-btn:hover{
+  background-color: #e0742c;
+}
+
+.login-input:hover{
+  border-color: #FE6502;
+  
+}
+
 .hr {
   border: 3px rgb(255, 145, 0) solid;
 }
 .Link-create {
-  color: orange;
+  color: #FE6502;
 }

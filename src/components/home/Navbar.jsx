@@ -1,6 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 import "./css/Navbar.css";
 
+
+
 export const Navbar = () => {
   return (
     <div className="container-fluid navbar-background">

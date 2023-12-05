@@ -1,4 +1,6 @@
 .navbar-background{
     height: 100vh;
-    background-color: orange;
+}
+img{
+    padding-top: 25px;
 }
