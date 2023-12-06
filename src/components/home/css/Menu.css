@@ -6,3 +6,10 @@ img{
     margin-top: 10px;
     gap: 5px;
 } 
+.menu-container{
+    height: 55vh;
+}
+.menu-elements{
+    height: 300px;
+    display: flex;
+}
